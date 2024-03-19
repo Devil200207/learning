@@ -12,7 +12,7 @@ let todos = [];
 
 app.get("/todos",(req,res)=>{
     res.send(todos);
-})
+})  
 
 app.post("/todos",(req,res)=>{
     const newtods = req.body;

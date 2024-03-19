@@ -26,7 +26,7 @@ async function fetchTodos() {
     const todos = await response.json();
     todos.forEach(displayTodo);
   }
-
+  
 async function displayTodo(todo)
 {
     const todoItem = document.createElement('li');
