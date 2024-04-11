@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input oninput="callFunction()" type="text" id="principal" placeholder="principal"> <br>   
+    <input oninput="callFunction()" type="text" id="time" placeholder="time">    <br>
+    <input oninput="callFunction()" type="text" id="rate" placeholder="rate"><br>
+    
+
+    <span id="total"></span><br>
+    <span id="result"></span>
+    
+    <script>
+        let time;
+        function callFunction()
+        {
+            clearInterval(time);
+            time = setTimeout(() => {
+                calculate()
+            }, 1000);
+        }
+        async function calculate()
+        {
+            const principal = document.getElementById('principal').value;
+            const time = document.getElementById('time').value;
+            const rate = document.getElementById('rate').value;
+
+            const responce = await fetch("https://sum-server.100xdevs.com/interest?principal="+principal +"&rate="+ rate +"&time=" + time);
+            const ans = await responce.json();
+
+            document.getElementById('total').innerHTML = "Total cost = "+ans.total;
+            document.getElementById('result').innerHTML = "Total Interest = "+ans.interest;
+            
+        }
+    </script>
+</body>
+</html>

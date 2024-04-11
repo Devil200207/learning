@@ -16,7 +16,7 @@ const User = mongoose.model("Users", {
 const app = express();
 app.use(express.json());
 
-async function userExists(username, password) {
+async function userExists(username, password) { 
   // should check in the database
 
   const exitUser =  await User.findOne({ username:username,password:password });
@@ -31,7 +31,7 @@ app.post("/signin", async function (req, res) {
   const username = req.body.username;
   const password = req.body.password;
 
-  const isUserExit = await userExists(username, password)
+  const isUserExit = await userExists(username, password) 
   console.log(isUserExit);
 
   if (!isUserExit) {
