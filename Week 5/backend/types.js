@@ -1,7 +1,7 @@
 const zod = require("zod");
 
 const addTodo = zod.object({
-    tile: zod.string(),
+    title: zod.string(),
     description: zod.string(),
 });
 
