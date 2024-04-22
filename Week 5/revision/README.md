@@ -15,13 +15,12 @@ it has the following features :-
 - anyone can mark down todo as done
 
 ### Tech Used
-
 **For Backend**
 - NodeJs
 - Express
 - Zod (for authontication)
 - mongoDb (as database)
-- mongoose ( for schema)
+- mongoose ( for schema) 
 
 **For Frontend**
 
