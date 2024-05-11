@@ -22,3 +22,24 @@ function CustomButton(props)
 }
 
 export default App
+
+
+fetch("http://localhost:3000/addPatient", {
+                     method:"POST",
+                     body:JSON.stringify(
+                     {
+                        name:name,
+                        email:email,
+                        phone:phone,
+                        city:city,
+                        ymptom:symptom
+                     }),
+                     headers:
+                     {
+                         "Content-Type":"application/json"
+                     }
+                 }).then(async (res) => {
+                     const json = await res.json();
+                     console.log(json);
+                     alert("Doctor added");
+                 })
