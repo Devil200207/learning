@@ -14,6 +14,6 @@ export const filtertodo = selector({
     get: ({get}) => {
         const todos = get(todoAtom);
         const list = get(todoListState);
-        return todos.filter((todo) => todo.title.includes(list))
+        return todos.filter((todo) => todo.title.includes(list) || todo.description.includes(list))
     }
 })
