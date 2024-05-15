@@ -1,0 +1,64 @@
+.b-outer
+{
+    height: 100%;
+}
+.b-inner
+{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.b-top
+{
+ height: 30%;
+ display: flex;
+ align-self: center;
+ justify-content: center;
+ margin-bottom: -30px;
+}
+.b-top img
+{   
+    z-index: 2;
+    height: 100%;
+    border: 1px solid black;
+    border-radius: 50%;
+    margin-top: -30px;
+}
+.b-mid
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50%;
+    justify-content: center;
+}
+.b-mid div:first-child
+{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.b-mid div span:nth-child(2)
+{
+    margin-left: 5px;
+    font-weight: 100;
+}
+.b-bottom
+{
+    display: flex;
+    height: 30%;
+    justify-content: space-around;
+    border-top: 1px solid black;
+}
+.b-bottom div
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.b-bottom div :first-child
+{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
