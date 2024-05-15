@@ -1,0 +1,67 @@
+div button:first-child
+{
+    padding: 2px;
+    width: 50px;
+    text-align: center;
+    background-color: red;
+    margin-right: 2px;
+    cursor: pointer;
+}
+div button:nth-child(2)
+{
+    padding: 2px;
+    width: 50px;
+    text-align: center;
+    background-color: yellow;
+    margin-right: 2px;
+    cursor: pointer;
+}
+div button:nth-child(3)
+{
+    padding: 2px;
+    width: 50px;
+    color:white;
+    text-align: center;
+    background-color: black;
+    margin-right: 2px;
+    cursor: pointer;
+
+}
+div button:nth-child(4)
+{
+    padding: 2px;
+    width: 50px;
+    text-align: center;
+    background-color: purple;
+    margin-right: 2px;
+    cursor: pointer;
+
+}
+div button:nth-child(5)
+{
+    padding: 2px;
+    width: 50px;
+    text-align: center;
+    background-color: green;
+    margin-right: 2px;
+    cursor: pointer;
+
+}
+div button:nth-child(6)
+{
+    padding: 2px;
+    width: 50px;
+    text-align: center;
+    background-color: blue;
+    margin-right: 2px;
+    cursor: pointer;
+
+}
+div button:nth-child(7)
+{
+    padding: 2px;
+    width: 50px;
+    text-align: center;
+    background-color: orange;
+    cursor: pointer;
+}
